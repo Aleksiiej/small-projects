@@ -114,8 +114,6 @@ public:
 
     int at(int number) // returns content of node
     {
-        // std::cout << number << std::endl;
-        // std::cout << totalNumber << std::endl;
         if (number == 0)
         {
             return ptrToFirst_->number_;
@@ -184,5 +182,4 @@ int main()
     List.showList();
     List.clear();
     List.showList();
-    // std::cout<<List.at(1);
 }
