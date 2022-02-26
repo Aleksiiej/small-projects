@@ -35,7 +35,7 @@ void forwardList::addElement(int number /*= 0*/) // adds node
         {
             tempPtr = tempPtr->ptrToNext_;
         }
-        tempPtr->ptrToNext_ = newElement;
+        tempPtr->ptrToNext_ = new Element;
         totalNumber++;
     }
 }
