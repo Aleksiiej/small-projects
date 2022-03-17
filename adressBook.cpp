@@ -123,3 +123,9 @@ void Head::edit(const std::string &name, const std::string &surname)
 }
 
 void Head::remove(const std::string &name, const std::string &surname)
+{
+    database_.erase(std::remove_if(begin(database_), end(database_),
+                                   [&](auto Person)
+                                   { return (Person.name_ == name && Person.surname_ == surname); }),
+                    end(database_));
+}
